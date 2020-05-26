@@ -1,7 +1,128 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Projeto Página Pessoal</h1>
-<p>Hospedado por GitHub Pages.</p>
+<head>
+   
+<title>Projeto Página Pessoal</title>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/index.js"></script>
+<script src="https://kit.fontawesome.com/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  .bg-1 {
+    background-color: #555555; 
+    color: ivory;
+  }
+  .bg-2 {
+    background-color: ivory; 
+    color: #555555;
+  }
+  .bg-3{
+    background-color: ivory;
+    color: #555555;
+  }
+  .container-fluid {   
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+</style>
+</head> 
+<body>    
+  <!--Barra de navegação-->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-opacity w3-hover-opacity-off w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>      
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>Sobre</a>           
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contato</a>
+    </div>
+  
+    <!-- Barra de navegação em telas pequenas -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Sobre</a>      
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contato</a>      
+    </div>
+  </div>      
+      
+  <div class="container-fluid bg-1 text-center">
+   <!--nome estilizado-->
+    <div class="w3-display-center" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity maquina" id="titulo">Felipe da Silva Carvalho</span>   
+    </div> 
+    <!--Foto-->
+    <div class="media">
+      <div class="media-center">
+        <img src="Foto.jpeg" alt="Foto Felipe" class="img-rounded" style="width:200px">
+      </div>  
+    </div>              
+    <div class="media-body" id="about">      
+      <h3 class="media-heading">
+      <hr>  
+        <p>Desafie-se! Acredita, a vida é agora!<br>Sou um cara disposto a novos desafios e de bem com a vida.
+        <hr>  
+          <br>Nasci em 26/03/1977 em Vitória/ES.
+          <br>Busco novos conhecimentos e recolocaçâo profissional numa área de meu interesse e de grande relevância.
+          <br>Responsabilidade, Compromisso e Assertividade. 
+        </p>        
+    </div> 
+  </div>     
+      <hr>
+ <div class= "container-fluid bg-2" id="ExperiÊncias Profissionais">
+    <div class="row">
+      <div class="col-md-6">
+        <h3><b>Experiências Profissionais</b></h3>
+        <h4><b>Caixa Economica Federal</b></h4>
+        <p>desde Jun.2008 - Emprego atual</p>
+        <p>Desenvolvo trabalhos diversos na área bancária, mais especificamente na retaguarda bancária,<br>como por exemplo, controle do funcionamento dos equipamentos de auto atendimento.</p>
+      </div>         
+      <div class="col-md-6">      
+        <h3><b>Formação Acadêmica</b></h3>
+        <h4><b>Universidade Vila Velha - UVV</b></h4>
+        <p>Ciências da Computação</p>
+        <p>Em andamento</p>
+        <h4><b>Universidade Federal do Espírito Santo - UFES</b></h4>
+        <p>Psicologia</p>
+        <p>2003 - 2008</p> 
+      </div>
+    </div>          
+  </div>  
+      <hr>    
+    <div class="container-fluid bg-3 text-left">
+        <h4><b>Interesses</b></h4>
+        <p>Atualmente ando em busca de novos desafios profissionais e por isso me dedico a estudar computação e as ciências tecnológicas.
+          <br> Acredito que é pra lá que "caminha a humanidade". Tenho me surpreendido mais e mais com essa área.
+          <br> Ademais, me divirto com atividades ao ar livre como caminhadas e ciclismo e também sou fã de videogames.
+          <br>Sonho conhecer um pouco mais do mundo e me aventurar pela História dos lugares e seu modo de viver, existir e coexistir com a natureza.</p>
+    </div>
+        <hr>
+        <p class="w3-center"><em>Entre em contato!</em></p>    
+      <div class="w3-row w3-center" id="contact">        
+        <p><b>fscarvalho77@gmail.com</b></p><br>
+        <p><b>55(27)99967.0425</b></p>
+    </div>
+
 </body>
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#about" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Topo</a>
+    <div class="w3-xlarge w3-section">      
+      <a href="https://www.instagram.com/felipcarval/" target="blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/felipe-carvalho-5b67591a1/" target="blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://github.com/FelipeCarval/" target="blank"><i class="fa fa-github"></i></a>
+      
+  
+    </div>
+    <p>Powered by Felipe da Silva Carvalho</p>
+</footer>
+ <script src="index.js"></script>
+                
+</footer>
 </html>
