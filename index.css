@@ -1,23 +1,18 @@
-.html{
-    box-sizing:border-box
+.titulo{
+    max-width: 1100px;
+    text-align: center;
+    margin: 60px auto;
+    font-family:'Courier New', Courier, monospace;
+    color: #ffffff;
 }
-*,*:before,*:after{
-    box-sizing:inherit
+.titulo:after{
+ content: '|';
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca .7s infinite;
 }
-.html{
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
-}
-.body{
-    margin:0
-}
-.maquina:after{
-    content: '|';
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-   }
-.keyframes: pisca{
+
+@keyframes pisca{
     0%, 100%{
         opacity: 1;
     }
@@ -25,3 +20,5 @@
         opacity: 0;
     }
 }
+
+
